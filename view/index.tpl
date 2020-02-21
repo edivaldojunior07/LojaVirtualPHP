@@ -60,24 +60,34 @@
 
 
 <!--2º Seção - Banner com produtos-->
-<div class="conteiner col-lg-12 col-md-12 col-sm-12 col-12 div_banner">
-  <div class="row">
-    <div id="Slide" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="img_slide" src="{$GET_PASTA_TEMA}/imagens/1.png" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="img_slide" src="{$GET_PASTA_TEMA}/imagens/2.png"  alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="img_slide" src="{$GET_PASTA_TEMA}/imagens/3.png" alt="Third slide">
-        </div>
-      </div>
+<div class="conteiner col-lg-6 col-md-4 col-sm-12 col-12 div_banner">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+    <div class="carousel-item active">
+      <img class="d-block" src="{$GET_PASTA_TEMA}/imagens/1.png" alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block" src="{$GET_PASTA_TEMA}/imagens/2.png" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block" src="{$GET_PASTA_TEMA}/imagens/3.png" alt="Terceiro Slide">
     </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
-
+</div>
 <!--3º seção - Categoria e produtos-->
 <div class="conteiner">
   <div class="row">

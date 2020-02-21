@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2019-11-26 20:09:08
+/* Smarty version 3.1.34-dev-7, created on 2020-02-19 14:40:12
   from 'C:\xampp\htdocs\LojaVirtual\view\produtos_update.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5ddd785487db79_87088362',
+  'unifunc' => 'content_5e4d3abc07d367_55882138',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'efb9cbc1ef839497fd43a46fcd5ee5ebf587f004' => 
     array (
       0 => 'C:\\xampp\\htdocs\\LojaVirtual\\view\\produtos_update.tpl',
-      1 => 1574795344,
+      1 => 1582119607,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ddd785487db79_87088362 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e4d3abc07d367_55882138 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -174,7 +174,8 @@ KG
 <form method="POST" action="<?php echo $_smarty_tpl->tpl_vars['DELETE_PRODUTO']->value;?>
 ">
         <div class="form-group col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
-                Confirmar exclusão
+                Confirmar exclusão produto Número referencia de cadastro:<input name="prod_id" readonly class="form-control input-md" type="text" value='<?php echo $_smarty_tpl->tpl_vars['P']->value['prod_id'];?>
+'></legend>
                 <input type="checkbox" name="id" value=<?php echo $_smarty_tpl->tpl_vars['P']->value['prod_id'];?>
 />
                 <button type="submit" class="btn btn-danger">Deletar</button>

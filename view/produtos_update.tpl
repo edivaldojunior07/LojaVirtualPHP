@@ -119,7 +119,7 @@
 </form>
 <form method="POST" action="{$DELETE_PRODUTO}">
         <div class="form-group col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
-                Confirmar exclusão
+                Confirmar exclusão produto Número referencia de cadastro:<input name="prod_id" readonly class="form-control input-md" type="text" value='{$P.prod_id}'></legend>
                 <input type="checkbox" name="id" value={$P.prod_id}/>
                 <button type="submit" class="btn btn-danger">Deletar</button>
         </div >

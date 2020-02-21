@@ -56,7 +56,6 @@ class Cliente extends Conexao{
             if($sql->rowCount()>0){
                 //entra no sistema
                 $dado = $sql->fetch(PDO::FETCH_ASSOC);
-                //inicia uma sessão
             //session_start();
                 $_SESSION['usu_id'] = $dado['usu_id'];
                 $_SESSION['usu_acesso'] = $dado['usu_acesso'];

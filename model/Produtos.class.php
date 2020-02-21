@@ -104,9 +104,10 @@ class Produtos extends Conexao{
             if($sql->execute()){
             }
         }
-        function deleteProduto($id){
-            echo "Produto deltado";
-        }
+    }
+    function deleteProduto($id){
+        $query = "DELETE FROM produtos WHERE `produtos`.`prod_id` = $id";
+        $this->ExecuteSQL($query);
     }
 }
 ?>

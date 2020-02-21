@@ -7,7 +7,7 @@ body{
   overflow-x:hidden;
 }
 section{
-  background-color: #FFCC57;
+  background-color: #e3e3e3;
   height: auto;
 }
 h1{
@@ -15,7 +15,7 @@ h1{
 }
 /*Roda PE*/
 #div_footer{
-  background-color: #FFCC57;
+  background-color: #e3e3e3;
   height: auto;
   /*text-align: center;*/
   padding: 15px;
@@ -66,22 +66,14 @@ h1{
   font-size: 20px;
   font-style: inherit;
 }
-/*Banner*/
-#Slide {
-  display: block;
-  width: auto;
-  margin: auto;
-  overflow: hidden;
-}
-.img_slide{
-  align-self: center;
-  height: 200px;
-  width: 200px;
-}
+Banner
 .div_banner{
-  padding: 10px;
+  position: absolute;
+  height: auto;
+  width: 400px;
   border-bottom: 2px solid #dbd4d4;
 }
+
 #div_Categorias{
   border: 1px solid #dbd4d4;
   text-align: center;
@@ -100,13 +92,14 @@ legend{
 }
 .area_produto{
   border-radius: 10px;
-  background-color: rgba(255, 205, 87, 0.664);
+  background-color: #777272;
   padding: 10px;
   margin: 15px;
 }
 .detalhes_produto{
+  color: white;
   border-radius: 10px;
-  background-color: rgba(255, 205, 87, 0.664);
+  background-color: rgba(0, 0, 0, 0.664);
   width:90%;
   padding: 20px;
   text-align: left;
